@@ -2,6 +2,7 @@ import {Dimensions} from 'react-native';
 
 export const screens = {
   HRM: 'HRM',
+  Home: 'Home',
   Forgot: 'Forgot',
   Profile: 'Profile',
   AppStack: 'AppStack',
@@ -15,7 +16,11 @@ export const screens = {
 };
 
 export const screensContent = {
-  HRM: {},
+  HRM: {
+    counterTitle: 'Check in Time counter',
+    checkInButton: 'Check In',
+    checkOutButton: 'Check Out',
+  },
   Forgot: {
     title: 'Forgot Password',
     subTitle: 'Please provide work email id',
@@ -85,6 +90,7 @@ export const colors = {
   colorE43958: 'rgba(228, 57, 88, 1)',
   colorE5E5EA: 'rgba(229, 229, 234, 1)',
   colorECF0F7: 'rgba(236, 240, 247, 1)',
+  colorCAC4D0: 'rgba(202, 196, 208, 1)',
   transparent_black: 'rgba(0, 0, 0, 0.2)',
   transparent: 'rgba(255, 255, 255, 0)',
   gray: 'rgba(128, 128, 128, 1)',
@@ -94,6 +100,7 @@ export const colors = {
   lighterGray: 'rgba(238, 238, 238, 1)',
   lightestGray: 'rgba(255, 255, 255, 1)',
   mediumGray: 'rgba(232, 229, 229, 1)',
+  green: 'rgba(26, 208, 56, 1)',
 };
 
 export const fontFamily = {};
