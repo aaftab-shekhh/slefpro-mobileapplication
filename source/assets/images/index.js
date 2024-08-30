@@ -19,4 +19,11 @@ export const images = {
   user_image: require('./user_image.png'),
   notification: require('./notification.png'),
   search: require('./search.png'),
+  arrow: require('./arrow.png'),
+  attendance: require('./attendance.png'),
+  track_leave: require('./track_leave.png'),
+  payroll: require('./payroll.png'),
+  notice: require('./notice.png'),
+  holidays: require('./holidays.png'),
+  more: require('./more.png'),
 };

@@ -20,6 +20,18 @@ export const screensContent = {
     counterTitle: 'Check in Time counter',
     checkInButton: 'Check In',
     checkOutButton: 'Check Out',
+    hrmTitle: "Today's Attendance",
+    present: 'Present',
+    absent: 'Absent',
+    punchedOut: 'Punched Out',
+    seeAll: 'See All',
+    attendance: 'Attendance',
+    trackLeave: 'Track Leave',
+    payroll: 'Payroll',
+    notice: 'Notice',
+    holidays: 'Holidays',
+    more: 'Show More',
+    coWorkerTitle: 'Co-Worker',
   },
   Forgot: {
     title: 'Forgot Password',
@@ -101,6 +113,9 @@ export const colors = {
   lightestGray: 'rgba(255, 255, 255, 1)',
   mediumGray: 'rgba(232, 229, 229, 1)',
   green: 'rgba(26, 208, 56, 1)',
+  darkGreen: 'rgba(52, 160, 70, 1)',
+  rad: 'rgba(216, 12, 12, 1)',
+  blue: 'rgba(26, 56, 208, 1)',
 };
 
 export const fontFamily = {};
