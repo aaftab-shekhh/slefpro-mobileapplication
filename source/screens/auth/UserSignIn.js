@@ -1,5 +1,5 @@
 import {useNavigation} from '@react-navigation/native';
-import React, {memo, useCallback, useRef} from 'react';
+import React, {memo, useCallback, useEffect, useRef} from 'react';
 import {Pressable, StyleSheet, View} from 'react-native';
 import FastImage from 'react-native-fast-image';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
@@ -31,6 +31,11 @@ const UserSignIn = ({route}) => {
   const passwordRef = useRef();
 
   const {navigate} = useNavigation();
+
+  useEffect(() => {
+    emailRef?.current?.set('aaftab.shaikh@finsanner.ai');
+    passwordRef?.current?.set('aaftab@1234');
+  }, []);
 
   const onLogin = useCallback(() => {
     const email = emailRef?.current?.get();

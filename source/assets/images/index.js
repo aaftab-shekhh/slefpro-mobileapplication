@@ -26,4 +26,10 @@ export const images = {
   notice: require('./notice.png'),
   holidays: require('./holidays.png'),
   more: require('./more.png'),
+  watch: require('./watch.png'),
+  flag: require('./flag.png'),
+  add_button: require('./add_button.png'),
+  project_attachment: require('./project_attachment.png'),
+  project_comment: require('./project_comment.png'),
+
 };
