@@ -8,7 +8,6 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-import FastImage from 'react-native-fast-image';
 import {images} from '../../assets/images';
 import Font400 from '../../components/fonts/Font400';
 import Font500 from '../../components/fonts/Font500';
@@ -110,7 +109,7 @@ const HRM = () => {
         </View>
         <View style={styles.hrmOptionContainer}>
           <View style={styles.hrmOption}>
-            <FastImage
+            <Image
               style={styles.hrmOptionIcon}
               source={images.attendance}
               resizeMode="contain"
@@ -118,7 +117,7 @@ const HRM = () => {
             <Font400 style={styles.hrmOptionTitle}>{attendance}</Font400>
           </View>
           <View style={styles.hrmOption}>
-            <FastImage
+            <Image
               style={styles.hrmOptionIcon}
               source={images.track_leave}
               resizeMode="contain"
@@ -126,7 +125,7 @@ const HRM = () => {
             <Font400 style={styles.hrmOptionTitle}>{trackLeave}</Font400>
           </View>
           <View style={styles.hrmOption}>
-            <FastImage
+            <Image
               style={styles.hrmOptionIcon}
               source={images.payroll}
               resizeMode="contain"
@@ -134,7 +133,7 @@ const HRM = () => {
             <Font400 style={styles.hrmOptionTitle}>{payroll}</Font400>
           </View>
           <View style={styles.hrmOption}>
-            <FastImage
+            <Image
               style={styles.hrmOptionIcon}
               source={images.notice}
               resizeMode="contain"
@@ -142,7 +141,7 @@ const HRM = () => {
             <Font400 style={styles.hrmOptionTitle}>{notice}</Font400>
           </View>
           <View style={styles.hrmOption}>
-            <FastImage
+            <Image
               style={styles.hrmOptionIcon}
               source={images.holidays}
               resizeMode="contain"
@@ -150,7 +149,7 @@ const HRM = () => {
             <Font400 style={styles.hrmOptionTitle}>{holidays}</Font400>
           </View>
           <View style={styles.hrmOption}>
-            <FastImage
+            <Image
               style={styles.hrmOptionIcon}
               source={images.more}
               resizeMode="contain"

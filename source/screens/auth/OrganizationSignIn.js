@@ -1,18 +1,17 @@
+import {useNavigation} from '@react-navigation/native';
 import React, {memo, useCallback, useEffect, useRef} from 'react';
-import {StyleSheet, View} from 'react-native';
-import FastImage from 'react-native-fast-image';
+import {Image, StyleSheet, View} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {images} from '../../assets/images';
 import Font400 from '../../components/fonts/Font400';
 import Button from '../../components/styles/Button';
+import Input from '../../components/styles/Input';
 import {
   colors,
   label,
   screens,
   screensContent,
 } from '../../constants/constants';
-import Input from '../../components/styles/Input';
-import {useNavigation} from '@react-navigation/native';
 
 const {title, subTitle, continueButton} = screensContent.OrganizationSignIn;
 const {organization} = label;
@@ -36,11 +35,7 @@ const OrganizationSignIn = () => {
 
   return (
     <View style={[styles.root, {paddingTop: top}]}>
-      <FastImage
-        source={images.logo}
-        resizeMode="contain"
-        style={styles.logo}
-      />
+      <Image source={images.logo} resizeMode="contain" style={styles.logo} />
       <Font400 style={styles.title}>{title}</Font400>
       <Font400 style={styles.subTitle}>{subTitle}</Font400>
       <Input

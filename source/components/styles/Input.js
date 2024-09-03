@@ -5,9 +5,7 @@ import React, {
   useImperativeHandle,
   useState,
 } from 'react';
-import {Pressable, StyleSheet, TextInput, View} from 'react-native';
-import FastImage from 'react-native-fast-image';
-
+import {Image, Pressable, StyleSheet, TextInput, View} from 'react-native';
 import Font600 from '../fonts/Font600';
 // import KeyboardManager from 'react-native-keyboard-manager';
 import {images} from '../../assets/images';
@@ -67,7 +65,7 @@ const Input = forwardRef(
         ) : null}
         <View style={[styles.inputContainer, style?.inputContainer]}>
           {leftIcon ? (
-            <FastImage
+            <Image
               source={leftIcon}
               style={[styles.icon, style?.leftIcon]}
               resizeMode="contain"
@@ -89,7 +87,7 @@ const Input = forwardRef(
           />
           {secureTextEntry ? (
             <Pressable onPress={onVisibleTextToggleHandler}>
-              <FastImage
+              <Image
                 source={images[isVisible ? 'visible' : 'hide']}
                 style={styles.icon}
                 resizeMode="contain"
@@ -97,7 +95,7 @@ const Input = forwardRef(
             </Pressable>
           ) : null}
           {rightIcon ? (
-            <FastImage
+            <Image
               source={rightIcon}
               style={[styles.icon, style?.rightIcon]}
               resizeMode="contain"

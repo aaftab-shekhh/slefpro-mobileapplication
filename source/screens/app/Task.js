@@ -1,12 +1,18 @@
 import React, {memo, useCallback, useState} from 'react';
-import {FlatList, Pressable, SectionList, StyleSheet, View} from 'react-native';
+import {
+  FlatList,
+  Image,
+  Pressable,
+  SectionList,
+  StyleSheet,
+  View,
+} from 'react-native';
+import {images} from '../../assets/images';
+import Font400 from '../../components/fonts/Font400';
+import TaskItem from '../../components/items/TaskItem';
 import TaskTypeItem from '../../components/items/TaskTypeItem';
 import Header from '../../components/styles/Header';
 import {colors, lists} from '../../constants/constants';
-import Font400 from '../../components/fonts/Font400';
-import FastImage from 'react-native-fast-image';
-import {images} from '../../assets/images';
-import TaskItem from '../../components/items/TaskItem';
 
 const Task = () => {
   const [taskType, setTaskType] = useState(lists.taskTypeList[0].value);
@@ -39,7 +45,7 @@ const Task = () => {
     <View style={{flex: 1}}>
       <Header />
       <Pressable onPress={onAddTaskButton} style={styles.addButtonContainer}>
-        <FastImage
+        <Image
           resizeMode="contain"
           style={styles.add_button}
           source={images.add_button}

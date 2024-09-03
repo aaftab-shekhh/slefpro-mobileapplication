@@ -1,18 +1,17 @@
-import {Pressable, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import FastImage from 'react-native-fast-image';
-import {images} from '../../assets/images';
-import {colors} from '../../constants/constants';
+import { Image, Pressable, StyleSheet, View } from 'react-native';
+import { images } from '../../assets/images';
+import { colors } from '../../constants/constants';
 
 const CoWorkerItem = () => {
   return (
     <Pressable>
-      <FastImage
+      <Image
         style={styles.userImage}
         resizeMode="contain"
         source={images.user_image}>
         <View style={styles.status} />
-      </FastImage>
+      </Image>
     </Pressable>
   );
 };

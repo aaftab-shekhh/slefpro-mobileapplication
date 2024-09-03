@@ -3,7 +3,6 @@ export const images = {
   logo: require('./logo.png'),
   arrow_left: require('./arrow_left.png'),
   wellComeImage1: require('./wellComeImage1.png'),
-
   home: require('./home.png'),
   active_home: require('./active_home.png'),
   hrm: require('./hrm.png'),
@@ -31,5 +30,4 @@ export const images = {
   add_button: require('./add_button.png'),
   project_attachment: require('./project_attachment.png'),
   project_comment: require('./project_comment.png'),
-
 };

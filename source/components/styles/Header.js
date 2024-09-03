@@ -1,6 +1,5 @@
 import React, {memo} from 'react';
 import {Image, Pressable, StyleSheet, View} from 'react-native';
-import FastImage from 'react-native-fast-image';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {images} from '../../assets/images';
 import {colors} from '../../constants/constants';
@@ -25,7 +24,7 @@ const Header = ({onSearch, title, subTitle}) => {
       </View>
 
       <Pressable onPress={onSearch} style={styles.searchContainer}>
-        <FastImage
+        <Image
           style={styles.searchIcon}
           resizeMode="contain"
           source={images.search}

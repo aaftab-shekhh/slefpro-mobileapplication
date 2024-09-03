@@ -1,7 +1,6 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import React, {memo} from 'react';
-import {StyleSheet} from 'react-native';
-import FastImage from 'react-native-fast-image';
+import {StyleSheet, Image} from 'react-native';
 import {images} from '../assets/images';
 import {colors, screens} from '../constants/constants';
 import HRM from '../screens/app/HRM';
@@ -35,7 +34,7 @@ const BottomStack = () => {
         name={screens.Home}
         options={{
           tabBarIcon: ({focused}) => (
-            <FastImage
+            <Image
               source={images[focused ? 'active_home' : 'home']}
               resizeMode="contain"
               style={styles[focused ? 'activeIcon' : 'icon']}
@@ -48,7 +47,7 @@ const BottomStack = () => {
         name={screens.Task}
         options={{
           tabBarIcon: ({focused}) => (
-            <FastImage
+            <Image
               source={images[focused ? 'active_task' : 'task']}
               resizeMode="contain"
               style={styles[focused ? 'activeIcon' : 'icon']}
@@ -61,7 +60,7 @@ const BottomStack = () => {
         name={screens.HRM}
         options={{
           tabBarIcon: ({focused}) => (
-            <FastImage
+            <Image
               source={images[focused ? 'active_hrm' : 'hrm']}
               resizeMode="contain"
               style={styles[focused ? 'activeIcon' : 'icon']}
@@ -74,7 +73,7 @@ const BottomStack = () => {
         name={screens.Project}
         options={{
           tabBarIcon: ({focused}) => (
-            <FastImage
+            <Image
               source={images[focused ? 'active_project' : 'project']}
               resizeMode="contain"
               style={styles[focused ? 'activeIcon' : 'icon']}
@@ -87,7 +86,7 @@ const BottomStack = () => {
         name={screens.Message}
         options={{
           tabBarIcon: ({focused}) => (
-            <FastImage
+            <Image
               source={images[focused ? 'active_message' : 'message']}
               resizeMode="contain"
               style={styles[focused ? 'activeIcon' : 'icon']}

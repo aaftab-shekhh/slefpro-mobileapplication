@@ -3,12 +3,12 @@ import React, {memo, useCallback, useEffect, useRef, useState} from 'react';
 import {
   Dimensions,
   FlatList,
+  Image,
   Pressable,
   StyleSheet,
   TouchableOpacity,
   View,
 } from 'react-native';
-import FastImage from 'react-native-fast-image';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {images} from '../../assets/images';
 import Font400 from '../../components/fonts/Font400';
@@ -81,7 +81,7 @@ const WellCome = () => {
         data={pages}
         renderItem={({item}) => (
           <View style={styles.content}>
-            <FastImage
+            <Image
               style={styles.image}
               source={images.wellComeImage1}
               resizeMode="contain"
@@ -124,7 +124,7 @@ const WellCome = () => {
           {marginBottom: bottom + 10, marginHorizontal: 20},
         ]}
         onPress={onContinua}>
-        <FastImage
+        <Image
           style={styles.button}
           source={images.next}
           resizeMode="contain"

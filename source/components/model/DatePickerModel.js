@@ -9,14 +9,13 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import {Pressable, StyleSheet, View} from 'react-native';
-import FastImage from 'react-native-fast-image';
+import {Image, Pressable, StyleSheet, View} from 'react-native';
+import DatePicker from 'react-native-date-picker';
 import images from '../../assets/images';
 import colors from '../../constant/colors';
 import Font600 from '../fonts/Font600';
 import Button from '../styles/Button';
 import BackDrop from './Backdrop';
-import DatePicker from 'react-native-date-picker';
 
 const DatePickerModel = forwardRef(({onPress, config}, ref) => {
   const bottomRef = useRef();
@@ -65,7 +64,7 @@ const DatePickerModel = forwardRef(({onPress, config}, ref) => {
             <View style={styles.header}>
               <Font600 style={styles.title}>{'Date'}</Font600>
               <Pressable onPress={close} style={styles.closeIconContainer}>
-                <FastImage
+                <Image
                   style={styles.closeIcon}
                   source={images.close}
                   resizeMode="contain"

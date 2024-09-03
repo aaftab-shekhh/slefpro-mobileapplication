@@ -1,17 +1,16 @@
-import {Pressable, StyleSheet, Text, View} from 'react-native';
-import React, {memo} from 'react';
-import FastImage from 'react-native-fast-image';
-import {images} from '../../assets/images';
-import Font500 from '../fonts/Font500';
-import Font400 from '../fonts/Font400';
 import moment from 'moment';
-import Font700 from '../fonts/Font700';
+import React, {memo} from 'react';
+import {Image, Pressable, StyleSheet, View} from 'react-native';
+import {images} from '../../assets/images';
 import {colors} from '../../constants/constants';
+import Font400 from '../fonts/Font400';
+import Font500 from '../fonts/Font500';
+import Font700 from '../fonts/Font700';
 
 const ChatUserItem = () => {
   return (
     <Pressable style={styles.itemContainer}>
-      <FastImage
+      <Image
         style={styles.userImage}
         resizeMode="contain"
         source={images.user_image}

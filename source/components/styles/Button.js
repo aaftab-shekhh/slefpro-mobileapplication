@@ -1,6 +1,5 @@
 import React from 'react';
-import {Pressable, StyleSheet} from 'react-native';
-import FastImage from 'react-native-fast-image';
+import {Image, Pressable, StyleSheet} from 'react-native';
 import {colors} from '../../constants/constants';
 import Font400 from '../fonts/Font400';
 
@@ -18,7 +17,7 @@ const Button = ({loader, onPress, style, children, icon, iconStyle}) => {
         {loader ? 'Processing...' : children}
       </Font400>
       {icon ? (
-        <FastImage style={iconStyle} resizeMode="contain" source={icon} />
+        <Image style={iconStyle} resizeMode="contain" source={icon} />
       ) : null}
     </Pressable>
   );

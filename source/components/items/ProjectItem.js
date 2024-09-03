@@ -1,11 +1,10 @@
 import React, {memo} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import Font400 from '../fonts/Font400';
-import ProjectTypeItem from './ProjectTypeItem';
-import {colors, lists} from '../../constants/constants';
-import FastImage from 'react-native-fast-image';
+import {Image, StyleSheet, View} from 'react-native';
 import {images} from '../../assets/images';
+import {colors, lists} from '../../constants/constants';
+import Font400 from '../fonts/Font400';
 import ProgressBar from '../styles/ProgressBar';
+import ProjectTypeItem from './ProjectTypeItem';
 
 // {
 //     date: moment().format('D-M-YY'),
@@ -34,7 +33,7 @@ const ProjectItem = ({data}) => {
     <View style={styles.projectContainer}>
       <View style={styles.projectHeader}>
         <View style={styles.dateContainer}>
-          <FastImage
+          <Image
             style={styles.flagIcon}
             resizeMode="contain"
             source={images.flag}
@@ -44,7 +43,7 @@ const ProjectItem = ({data}) => {
         <ProjectTypeItem data={projectStatus} />
       </View>
       <View style={styles.dateContainer}>
-        <FastImage
+        <Image
           source={{uri: clint_detail?.image}}
           resizeMode="contain"
           style={styles.clint_image}
@@ -65,7 +64,7 @@ const ProjectItem = ({data}) => {
       <View style={styles.projectFooter}>
         <View style={{flex: 1}} />
         <View style={styles.dateContainer}>
-          <FastImage
+          <Image
             style={styles.footerIcon}
             resizeMode="contain"
             source={images.project_attachment}
@@ -73,7 +72,7 @@ const ProjectItem = ({data}) => {
           <Font400 style={styles.clint_name}>{'8'}</Font400>
         </View>
         <View style={[styles.dateContainer, {marginLeft: 12}]}>
-          <FastImage
+          <Image
             style={styles.footerIcon}
             resizeMode="contain"
             source={images.project_comment}

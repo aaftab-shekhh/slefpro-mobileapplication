@@ -1,18 +1,17 @@
-import React, {memo, useCallback, useEffect, useRef} from 'react';
-import {Pressable, StyleSheet, View} from 'react-native';
-import FastImage from 'react-native-fast-image';
+import {useNavigation} from '@react-navigation/native';
+import React, {memo, useCallback, useRef} from 'react';
+import {Image, Pressable, StyleSheet, View} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {images} from '../../assets/images';
 import Font400 from '../../components/fonts/Font400';
 import Button from '../../components/styles/Button';
+import Input from '../../components/styles/Input';
 import {
   colors,
   label,
   screens,
   screensContent,
 } from '../../constants/constants';
-import Input from '../../components/styles/Input';
-import {useNavigation} from '@react-navigation/native';
 
 const {title, subTitle, updateButton} = screensContent.UpdatePassword;
 const {new_password, confirm_password} = label;
@@ -31,7 +30,7 @@ const UpdatePassword = () => {
   return (
     <View style={[styles.root, {paddingTop: top}]}>
       <Pressable onPress={goBack}>
-        <FastImage
+        <Image
           source={images.arrow_left}
           resizeMode="contain"
           style={styles.backIcon}

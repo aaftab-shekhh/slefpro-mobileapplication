@@ -1,19 +1,18 @@
 import {useNavigation} from '@react-navigation/native';
 import React, {memo, useCallback, useEffect, useRef} from 'react';
-import {Pressable, StyleSheet, View} from 'react-native';
-import FastImage from 'react-native-fast-image';
+import {Image, Pressable, StyleSheet, View} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {useDispatch} from 'react-redux';
 import {images} from '../../assets/images';
 import Font400 from '../../components/fonts/Font400';
 import Button from '../../components/styles/Button';
+import Input from '../../components/styles/Input';
 import {
   colors,
   label,
   screens,
   screensContent,
 } from '../../constants/constants';
-import Input from '../../components/styles/Input';
-import {useDispatch} from 'react-redux';
 import {login} from '../../redux/store';
 
 const {subTitle, loginButton} = screensContent.UserSignIn;
@@ -50,11 +49,7 @@ const UserSignIn = ({route}) => {
   return (
     <View style={[styles.root, {paddingTop: top}]}>
       <View style={styles.titleContainer}>
-        <FastImage
-          source={images.logo}
-          resizeMode="contain"
-          style={styles.logo}
-        />
+        <Image source={images.logo} resizeMode="contain" style={styles.logo} />
         <Font400 style={styles.title}>{organization}</Font400>
       </View>
       <Font400 style={styles.subTitle}>{subTitle}</Font400>

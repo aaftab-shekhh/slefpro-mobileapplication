@@ -1,9 +1,8 @@
-import {Pressable, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {Image, Pressable, StyleSheet, View} from 'react-native';
+import {images} from '../../assets/images';
 import {colors, lists} from '../../constants/constants';
 import Font400 from '../fonts/Font400';
-import FastImage from 'react-native-fast-image';
-import {images} from '../../assets/images';
 
 const TaskItem = ({data}) => {
   const {priority, completed, date, task} = data;
@@ -20,7 +19,7 @@ const TaskItem = ({data}) => {
       <View style={styles.taskFooter}>
         {priority !== lists.taskTypeList[1].value ? (
           <View style={styles.priorityContainer}>
-            <FastImage
+            <Image
               source={images.flag}
               resizeMode="contain"
               style={styles.flagIcon}
@@ -37,7 +36,7 @@ const TaskItem = ({data}) => {
           </View>
         ) : null}
         <Pressable>
-          <FastImage
+          <Image
             source={images.watch}
             resizeMode="contain"
             style={styles.watchIcon}
