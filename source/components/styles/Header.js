@@ -1,7 +1,7 @@
-import {Pressable, StyleSheet, Text, View} from 'react-native';
 import React, {memo} from 'react';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {Image, Pressable, StyleSheet, View} from 'react-native';
 import FastImage from 'react-native-fast-image';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {images} from '../../assets/images';
 import {colors} from '../../constants/constants';
 import Font400 from '../fonts/Font400';
@@ -12,7 +12,7 @@ const Header = ({onSearch, title, subTitle}) => {
   return (
     <View style={[styles.root, {marginTop: top + 10}]}>
       <Pressable>
-        <FastImage
+        <Image
           style={styles.userImage}
           resizeMode="contain"
           source={images.user_image}
