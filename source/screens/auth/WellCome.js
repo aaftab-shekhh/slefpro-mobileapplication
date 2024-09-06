@@ -13,15 +13,12 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {images} from '../../assets/images';
 import Font400 from '../../components/fonts/Font400';
 import Font700 from '../../components/fonts/Font700';
-import {
-  colors,
-  dynamic,
-  label,
-  screens,
-  screensContent,
-} from '../../constants/constants';
+import colors from '../../constants/colors';
+import dynamic from '../../constants/dynamic';
+import label from '../../constants/label';
+import screensContent from '../../constants/screensContent';
 
-const {pages} = screensContent.WellCome;
+const {pages} = screensContent;
 const {skip} = label;
 
 const WellCome = () => {

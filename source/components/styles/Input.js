@@ -9,7 +9,8 @@ import {Image, Pressable, StyleSheet, TextInput, View} from 'react-native';
 import Font600 from '../fonts/Font600';
 // import KeyboardManager from 'react-native-keyboard-manager';
 import {images} from '../../assets/images';
-import {colors} from '../../constants/constants';
+import colors from '../../constants/colors';
+import fontFamily from '../../constants/fontFamily';
 
 // if (Platform.OS === 'ios') {
 //   KeyboardManager.setEnable(true);
@@ -84,6 +85,7 @@ const Input = forwardRef(
             cursorColor={colors.gray}
             selectionColor={colors.gray}
             secureTextEntry={isVisible}
+            placeholderTextColor={colors.color3C3C4399}
           />
           {secureTextEntry ? (
             <Pressable onPress={onVisibleTextToggleHandler}>
@@ -124,9 +126,9 @@ const styles = StyleSheet.create({
   input: {
     flex: 1,
     fontSize: 16,
-    fontWeight: 400,
-    color: colors.darkGray,
     paddingHorizontal: 16,
+    color: colors.darkGray,
+    fontFamily: fontFamily.Font400,
   },
   icon: {
     width: 16,

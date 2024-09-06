@@ -1,7 +1,8 @@
 import React, {memo, useRef} from 'react';
 import {StyleSheet, View} from 'react-native';
 import OtpInputs from 'react-native-otp-inputs';
-import {colors} from '../../constants/constants';
+import colors from '../../constants/colors';
+import fontFamily from '../../constants/fontFamily';
 
 const OtpInput = ({onChangeTextHandler}) => {
   const otpRef = useRef();
@@ -24,7 +25,7 @@ const OtpInput = ({onChangeTextHandler}) => {
           fontSize: 16,
           textAlign: 'center',
           color: colors.black,
-          fontWeight: 400,
+          fontFamily: fontFamily.Font400,
         }}
         inputContainerStyles={{
           width: 64,

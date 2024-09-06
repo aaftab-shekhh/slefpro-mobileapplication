@@ -1,4 +1,4 @@
-import React, {memo, useCallback, useState} from 'react';
+import React, {memo, useCallback, useRef, useState} from 'react';
 import {
   FlatList,
   Image,
@@ -11,11 +11,15 @@ import {images} from '../../assets/images';
 import Font400 from '../../components/fonts/Font400';
 import TaskItem from '../../components/items/TaskItem';
 import TaskTypeItem from '../../components/items/TaskTypeItem';
+import AddTaskModel from '../../components/model/AddTaskModel';
 import Header from '../../components/styles/Header';
-import {colors, lists} from '../../constants/constants';
+import colors from '../../constants/colors';
+import lists from '../../constants/lists';
 
 const Task = () => {
   const [taskType, setTaskType] = useState(lists.taskTypeList[0].value);
+
+  const addTask = useRef();
 
   const renderItemHandler = useCallback(
     ({item}) => {
@@ -39,11 +43,14 @@ const Task = () => {
     [],
   );
 
-  const onAddTaskButton = useCallback(() => {}, []);
+  const onAddTaskButton = useCallback(() => {
+    addTask?.current?.open();
+  }, []);
 
   return (
     <View style={{flex: 1}}>
       <Header />
+      <AddTaskModel ref={addTask} />
       <Pressable onPress={onAddTaskButton} style={styles.addButtonContainer}>
         <Image
           resizeMode="contain"

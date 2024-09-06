@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, Pressable, StyleSheet} from 'react-native';
-import {colors} from '../../constants/constants';
+import colors from '../../constants/colors';
 import Font400 from '../fonts/Font400';
 
 const Button = ({loader, onPress, style, children, icon, iconStyle}) => {

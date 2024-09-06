@@ -7,12 +7,10 @@ import Font400 from '../../components/fonts/Font400';
 import Button from '../../components/styles/Button';
 import Input from '../../components/styles/Input';
 import OtpInput from '../../components/styles/OtpInput';
-import {
-  colors,
-  label,
-  screens,
-  screensContent,
-} from '../../constants/constants';
+import colors from '../../constants/colors';
+import label from '../../constants/label';
+import screens from '../../constants/screens';
+import screensContent from '../../constants/screensContent';
 
 const {title, subTitle, verifyButton} = screensContent.OtpVerification;
 const {your_work_email, resend_code} = label;

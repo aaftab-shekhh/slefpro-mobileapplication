@@ -1,0 +1,18 @@
+export default screens = {
+  HRM: 'HRM',
+  Home: 'Home',
+  Task: 'Task',
+  Forgot: 'Forgot',
+  Profile: 'Profile',
+  Project: 'Project',
+  Message: 'Message',
+  AppStack: 'AppStack',
+  WellCome: 'WellCome',
+  AuthStack: 'AuthStack',
+  UserSignIn: 'UserSignIn',
+  TaskDetail: 'TaskDetail',
+  BottomStack: 'BottomStack',
+  UpdatePassword: 'UpdatePassword',
+  OtpVerification: 'OtpVerification',
+  OrganizationSignIn: 'OrganizationSignIn',
+};

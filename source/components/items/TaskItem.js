@@ -1,14 +1,23 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import {Image, Pressable, StyleSheet, View} from 'react-native';
 import {images} from '../../assets/images';
-import {colors, lists} from '../../constants/constants';
+import colors from '../../constants/colors';
+import lists from '../../constants/lists';
 import Font400 from '../fonts/Font400';
+import {useNavigation} from '@react-navigation/native';
+import screens from '../../constants/screens';
 
 const TaskItem = ({data}) => {
   const {priority, completed, date, task} = data;
 
+  const {navigate} = useNavigation();
+
+  const onNavigateTaskDetail = useCallback(() => {
+    navigate(screens.TaskDetail);
+  }, []);
+
   return (
-    <View style={styles.taskContainer}>
+    <Pressable onPress={onNavigateTaskDetail} style={styles.taskContainer}>
       <Pressable style={styles.completeContainer}>
         {completed ? <View style={styles.complete} /> : false}
       </Pressable>
@@ -43,7 +52,7 @@ const TaskItem = ({data}) => {
           />
         </Pressable>
       </View>
-    </View>
+    </Pressable>
   );
 };
 

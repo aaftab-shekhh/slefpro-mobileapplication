@@ -1,7 +1,8 @@
 import React, {memo} from 'react';
 import {Image, StyleSheet, View} from 'react-native';
 import {images} from '../../assets/images';
-import {colors, lists} from '../../constants/constants';
+import colors from '../../constants/colors';
+import lists from '../../constants/lists';
 import Font400 from '../fonts/Font400';
 import ProgressBar from '../styles/ProgressBar';
 import ProjectTypeItem from './ProjectTypeItem';

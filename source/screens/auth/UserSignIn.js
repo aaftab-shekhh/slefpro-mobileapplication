@@ -7,12 +7,9 @@ import {images} from '../../assets/images';
 import Font400 from '../../components/fonts/Font400';
 import Button from '../../components/styles/Button';
 import Input from '../../components/styles/Input';
-import {
-  colors,
-  label,
-  screens,
-  screensContent,
-} from '../../constants/constants';
+import colors from '../../constants/colors';
+import label from '../../constants/label';
+import screensContent from '../../constants/screensContent';
 import {login} from '../../redux/store';
 
 const {subTitle, loginButton} = screensContent.UserSignIn;

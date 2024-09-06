@@ -1,7 +1,8 @@
-import {Pressable, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {Pressable, StyleSheet} from 'react-native';
+import colors from '../../constants/colors';
+import fontFamily from '../../constants/fontFamily';
 import Font400 from '../fonts/Font400';
-import {colors} from '../../constants/constants';
 
 const ProjectTypeItem = ({data, selected, onPress}) => {
   const {title, value} = data;
@@ -21,7 +22,9 @@ const ProjectTypeItem = ({data, selected, onPress}) => {
       <Font400
         style={[
           styles.title,
-          selected === value ? {fontWeight: 700, color: colors.white} : null,
+          selected === value
+            ? {fontFamily: fontFamily.Font700, color: colors.white}
+            : null,
         ]}>
         {title}
       </Font400>

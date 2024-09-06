@@ -1,17 +1,17 @@
 import React from 'react';
-import { Image, Pressable, StyleSheet, View } from 'react-native';
-import { images } from '../../assets/images';
-import { colors } from '../../constants/constants';
+import {Image, Pressable, StyleSheet, View} from 'react-native';
+import {images} from '../../assets/images';
+import colors from '../../constants/colors';
 
 const CoWorkerItem = () => {
   return (
-    <Pressable>
+    <Pressable style={styles.itemContainer}>
       <Image
         style={styles.userImage}
         resizeMode="contain"
-        source={images.user_image}>
-        <View style={styles.status} />
-      </Image>
+        source={images.user_image}
+      />
+      <View style={styles.status} />
     </Pressable>
   );
 };
@@ -19,10 +19,10 @@ const CoWorkerItem = () => {
 export default CoWorkerItem;
 
 const styles = StyleSheet.create({
+  itemContainer: {marginRight: 20},
   userImage: {
     width: 60,
     height: 60,
-    marginRight: 20,
     borderRadius: 30,
     overflow: 'visible',
   },

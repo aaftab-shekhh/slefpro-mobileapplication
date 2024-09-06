@@ -3,7 +3,7 @@ import {FlatList, StyleSheet, View} from 'react-native';
 import ProjectItem from '../../components/items/ProjectItem';
 import ProjectTypeItem from '../../components/items/ProjectTypeItem';
 import Header from '../../components/styles/Header';
-import {lists} from '../../constants/constants';
+import lists from '../../constants/lists';
 
 const Project = () => {
   const [projectType, setProjectType] = useState(

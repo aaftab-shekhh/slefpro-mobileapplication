@@ -2,7 +2,7 @@ import moment from 'moment';
 import React, {memo} from 'react';
 import {Image, Pressable, StyleSheet, View} from 'react-native';
 import {images} from '../../assets/images';
-import {colors} from '../../constants/constants';
+import colors from '../../constants/colors';
 import Font400 from '../fonts/Font400';
 import Font500 from '../fonts/Font500';
 import Font700 from '../fonts/Font700';

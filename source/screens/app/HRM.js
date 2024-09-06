@@ -16,7 +16,10 @@ import Font700 from '../../components/fonts/Font700';
 import CoWorkerItem from '../../components/items/CoWorkerItem';
 import Button from '../../components/styles/Button';
 import Header from '../../components/styles/Header';
-import {colors, dynamic, screensContent} from '../../constants/constants';
+import colors from '../../constants/colors';
+import dynamic from '../../constants/dynamic';
+import fontFamily from '../../constants/fontFamily';
+import screensContent from '../../constants/screensContent';
 
 const {
   counterTitle,
@@ -231,7 +234,7 @@ const styles = StyleSheet.create({
     },
     buttonText: {
       fontSize: 12,
-      fontWeight: 500,
+      fontFamily: fontFamily.Font500,
     },
   },
   checkOutButton: {
@@ -242,7 +245,7 @@ const styles = StyleSheet.create({
     },
     buttonText: {
       fontSize: 12,
-      fontWeight: 500,
+      fontFamily: fontFamily.Font500,
     },
   },
   hrmHeader: {

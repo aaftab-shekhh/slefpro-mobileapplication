@@ -2,7 +2,7 @@ import React, {memo} from 'react';
 import {Image, Pressable, StyleSheet, View} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {images} from '../../assets/images';
-import {colors} from '../../constants/constants';
+import colors from '../../constants/colors';
 import Font400 from '../fonts/Font400';
 
 const Header = ({onSearch, title, subTitle}) => {

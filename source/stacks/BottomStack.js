@@ -1,14 +1,16 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import React, {memo} from 'react';
-import {StyleSheet, Image} from 'react-native';
+import {Image, StyleSheet} from 'react-native';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import colors from '../constants/colors';
+import fontFamily from '../constants/fontFamily';
+import screens from '../constants/screens';
 import {images} from '../assets/images';
-import {colors, screens} from '../constants/constants';
 import HRM from '../screens/app/HRM';
 import Home from '../screens/app/Home';
-import Task from '../screens/app/Task';
-import Project from '../screens/app/Project';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import Message from '../screens/app/Message';
+import Project from '../screens/app/Project';
+import Task from '../screens/app/Task';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,11 +20,12 @@ const BottomStack = () => {
     <Tab.Navigator
       screenOptions={{
         tabBarLabelStyle: {
-          fontWeight: 500,
+          fontSize: 14,
+          fontFamily: fontFamily.Font400,
         },
         tabBarStyle: {
           backgroundColor: colors.colorECF0F7,
-          height: bottom + 55,
+          height: bottom + 65,
         },
         tabBarActiveTintColor: colors.colorE43958,
         tabBarInactiveTintColor: colors.colorCAC4D0,

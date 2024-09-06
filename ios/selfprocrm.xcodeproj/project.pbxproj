@@ -13,8 +13,17 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1E6561815B82FCFCA0E8B8DD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1C410E084C798B3E0C4654B4 /* PrivacyInfo.xcprivacy */; };
+		38E27935C0A0419BBFF7F001 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D67D53164934D69A575FF2D /* Montserrat-Light.ttf */; };
+		3D72C51DA87142EE82E7F80F /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B362DC361D5D4E3A8BA8AF7D /* Montserrat-ExtraLight.ttf */; };
+		4D8B31E865A9467E810CBAAF /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88E6CE37D81649A0BAB0A8F5 /* Montserrat-Bold.ttf */; };
+		633B958AD04149A9A1C6147D /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EB77040187C48DF86E30760 /* Montserrat-Thin.ttf */; };
+		6DD67B0AE61249DDA59753A2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1FF22A1F3945FE862655D8 /* Montserrat-Medium.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-selfprocrm-selfprocrmTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-selfprocrm-selfprocrmTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9CB4A46508584AE78482C791 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66C57E79E2C24CF28648C3AD /* Montserrat-SemiBold.ttf */; };
+		9D8EC1481AD04A878CED42A6 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BF0F5BD404F41A1A1B0F879 /* Montserrat-Black.ttf */; };
+		BC3B0189F0E448288656EDF0 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA28A52248A64973AE491FAA /* Montserrat-ExtraBold.ttf */; };
+		D888F982773C46709EFB0098 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C0327635BC049C59EA0ECA7 /* Montserrat-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +40,7 @@
 		00E356EE1AD99517003FC87E /* selfprocrmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = selfprocrmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* selfprocrmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = selfprocrmTests.m; sourceTree = "<group>"; };
+		0C1FF22A1F3945FE862655D8 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../source/assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* selfprocrm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selfprocrm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = selfprocrm/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = selfprocrm/AppDelegate.mm; sourceTree = "<group>"; };
@@ -39,13 +49,21 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = selfprocrm/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = selfprocrm/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-selfprocrm-selfprocrmTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-selfprocrm-selfprocrmTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C410E084C798B3E0C4654B4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = selfprocrm/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1C410E084C798B3E0C4654B4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = selfprocrm/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		2EB77040187C48DF86E30760 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Thin.ttf"; path = "../source/assets/fonts/Montserrat-Thin.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-selfprocrm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfprocrm.debug.xcconfig"; path = "Target Support Files/Pods-selfprocrm/Pods-selfprocrm.debug.xcconfig"; sourceTree = "<group>"; };
+		4C0327635BC049C59EA0ECA7 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../source/assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-selfprocrm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfprocrm.release.xcconfig"; path = "Target Support Files/Pods-selfprocrm/Pods-selfprocrm.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-selfprocrm-selfprocrmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfprocrm-selfprocrmTests.debug.xcconfig"; path = "Target Support Files/Pods-selfprocrm-selfprocrmTests/Pods-selfprocrm-selfprocrmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BF0F5BD404F41A1A1B0F879 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Black.ttf"; path = "../source/assets/fonts/Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		5D67D53164934D69A575FF2D /* Montserrat-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Light.ttf"; path = "../source/assets/fonts/Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-selfprocrm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-selfprocrm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C57E79E2C24CF28648C3AD /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../source/assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = selfprocrm/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88E6CE37D81649A0BAB0A8F5 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../source/assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-selfprocrm-selfprocrmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfprocrm-selfprocrmTests.release.xcconfig"; path = "Target Support Files/Pods-selfprocrm-selfprocrmTests/Pods-selfprocrm-selfprocrmTests.release.xcconfig"; sourceTree = "<group>"; };
+		B362DC361D5D4E3A8BA8AF7D /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraLight.ttf"; path = "../source/assets/fonts/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		CA28A52248A64973AE491FAA /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraBold.ttf"; path = "../source/assets/fonts/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -84,6 +102,22 @@
 				00E356F11AD99517003FC87E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11F4D1DC2C2C46E68C4B601E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BF0F5BD404F41A1A1B0F879 /* Montserrat-Black.ttf */,
+				88E6CE37D81649A0BAB0A8F5 /* Montserrat-Bold.ttf */,
+				CA28A52248A64973AE491FAA /* Montserrat-ExtraBold.ttf */,
+				B362DC361D5D4E3A8BA8AF7D /* Montserrat-ExtraLight.ttf */,
+				5D67D53164934D69A575FF2D /* Montserrat-Light.ttf */,
+				0C1FF22A1F3945FE862655D8 /* Montserrat-Medium.ttf */,
+				4C0327635BC049C59EA0ECA7 /* Montserrat-Regular.ttf */,
+				66C57E79E2C24CF28648C3AD /* Montserrat-SemiBold.ttf */,
+				2EB77040187C48DF86E30760 /* Montserrat-Thin.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* selfprocrm */ = {
@@ -127,6 +161,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				11F4D1DC2C2C46E68C4B601E /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -249,6 +284,15 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				1E6561815B82FCFCA0E8B8DD /* PrivacyInfo.xcprivacy in Resources */,
+				9D8EC1481AD04A878CED42A6 /* Montserrat-Black.ttf in Resources */,
+				4D8B31E865A9467E810CBAAF /* Montserrat-Bold.ttf in Resources */,
+				BC3B0189F0E448288656EDF0 /* Montserrat-ExtraBold.ttf in Resources */,
+				3D72C51DA87142EE82E7F80F /* Montserrat-ExtraLight.ttf in Resources */,
+				38E27935C0A0419BBFF7F001 /* Montserrat-Light.ttf in Resources */,
+				6DD67B0AE61249DDA59753A2 /* Montserrat-Medium.ttf in Resources */,
+				D888F982773C46709EFB0098 /* Montserrat-Regular.ttf in Resources */,
+				9CB4A46508584AE78482C791 /* Montserrat-SemiBold.ttf in Resources */,
+				633B958AD04149A9A1C6147D /* Montserrat-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +515,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_TEAM = DMG8ZXXBQ8;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = selfprocrm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -484,7 +529,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = selfpro.com;
 				PRODUCT_NAME = selfprocrm;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -498,7 +543,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_TEAM = DMG8ZXXBQ8;
 				INFOPLIST_FILE = selfprocrm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -510,7 +556,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = selfpro.com;
 				PRODUCT_NAME = selfprocrm;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -590,10 +636,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -666,10 +709,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
